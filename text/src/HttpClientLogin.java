@@ -14,6 +14,7 @@ import org.apache.commons.httpclient.methods.PostMethod;
 public class HttpClientLogin {  
   
     public static void main(String[] args) {  
+    	
         // 登陆 Url  
         String loginUrl = "http://localhost/login.jsp";  
         // 需登陆后访问的 Url  
