@@ -17,7 +17,18 @@ public class AppRole {
 	protected java.util.Date updateTime;
 	protected Short status;
 	protected Short isSystem;
+    protected String idStr;
 	protected Integer version;
+	
+	
+	public String getIdStr()
+	{
+		return idStr;
+	}
+	public void setIdStr(String idStr)
+	{
+		this.idStr = idStr;
+	}
 	public Integer getAppRoleId()
 	{
 		return appRoleId;
@@ -82,7 +93,4 @@ public class AppRole {
 	{
 		this.version = version;
 	}
-	
-	
-	
 }

@@ -64,7 +64,6 @@ public class UTFtext
             default:  
                 code = "GBK";  
         }  
-          
         return code;  
     }  
     

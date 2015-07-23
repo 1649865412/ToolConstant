@@ -30,7 +30,7 @@ public class MysqlTest
 {
 	public static void main(String[] args){  
 		String driver = "com.mysql.jdbc.Driver";  
-		String url = "jdbc:mysql://192.168.1.105:3306/mindo";  
+		String url = "jdbc:mysql://192.168.1.114:3306/mindo";  
 		String user = "root";  
 		String password = "root";  
 		try {  
@@ -39,19 +39,23 @@ public class MysqlTest
 		        if(!conn.isClosed())  
 		            System.out.println("Succeeded connecting to the Database!");   
 		            Statement statement = (Statement) conn.createStatement();  
-		            String sql = "select * from app_role order by appRoleId desc";  
-		            String sql2 ="";
-		              
-		      ResultSet rs = (ResultSet) statement.executeQuery(sql);  
+		            
+		     
+		      //   String sql = "select * from app_role order by appRoleId desc";
+		      String sql = "SELECT a.`roleName` AS idStr,a.`roleName` AS roleName,a.`roleName`AS roleDetail  FROM `app_role`  a"; 
+
 		      
+		      ResultSet rs = (ResultSet) statement.executeQuery(sql);  
 		      JSONArray jsonArray = ResultSetToJsonArray(rs);
 		      List<AppRole> resulist = getJavaCollection(new AppRole(),  jsonArray);
-		    //  List<AppRole>resulist = RsMapEntityHelper.rsMapToEntityList(AppRole.class, rs);
+		      
+		      //List<AppRole>resulist = RsMapEntityHelper.rsMapToEntityList(AppRole.class, rs);
 		      Iterator iterator = resulist.iterator();
 		       while(iterator.hasNext())
 		       {
 		    	   AppRole str = (AppRole) iterator.next();
-		    	   System.out.println(str.getRoleName()+":"+str.getCreateTime()+":"+str.getUpdateTime());
+		    	   System.out.println(str.getRoleName());
+		    	 //  System.out.println(str.getRoleName()+":"+str.getCreateTime()+":"+str.getUpdateTime());
 		       }
 		      String name = null;  
 		      while(rs.next())   
