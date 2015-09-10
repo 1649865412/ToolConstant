@@ -9,6 +9,16 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+
+/**
+ *  日期工具类
+ *  <code>CalenderTime.java</code>
+ *  <p>
+ *  <p>Copyright  2015 All right reserved.
+ *  @author admin 时间 2015-9-7 下午02:12:52	
+ *  @version 1.0 
+ *  </br>最后修改人 无
+ */
 public class CalenderTime {
 
 	
@@ -243,6 +253,7 @@ public class CalenderTime {
 		String time = transDateToDateString(now.getTime());
 		return time;
 	}
+	
 	
 	
 	/**

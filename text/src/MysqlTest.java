@@ -29,8 +29,9 @@ import com.mysql.jdbc.Statement;
 public class MysqlTest
 {
 	public static void main(String[] args){  
+		System.out.print(750/300);
 		String driver = "com.mysql.jdbc.Driver";  
-		String url = "jdbc:mysql://192.168.1.114:3306/mindo";  
+		String url = "jdbc:mysql://192.168.1.112:3306/mindo";  
 		String user = "root";  
 		String password = "root";  
 		try {  

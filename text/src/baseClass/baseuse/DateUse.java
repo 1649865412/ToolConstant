@@ -71,7 +71,7 @@ public class DateUse {
 	}
 
 	/** 某一年中1月到某月共有几天*/
-	public void monthSum(int year, int month) {
+	public static void monthSum(int year, int month) {
 		int sum = 0;// 用于求天数总和
 		int day = 0;// 表示每个月的天数
 		for (int i = 1; i < month; i++) {
@@ -105,7 +105,7 @@ public class DateUse {
 	}
 
 	/** 输出字符串日期，并判断明天星期几*/
-	public void dateString(String str, String dateFrom) {
+	public static void dateString(String str, String dateFrom) {
 		// 如str = "2015-05-11 10:20:30" dateFrom="yyyy-MM-dd hh:mm:ss"
 		SimpleDateFormat f = new SimpleDateFormat(dateFrom);
 		Date date = null;
@@ -119,6 +119,13 @@ public class DateUse {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(date);
 		System.out.println("明天星期"+cal.get(Calendar.DAY_OF_WEEK));
+	}
+	
+	public static void main(String[] args)
+	{
+		//dateString("2015-06-01", "yyyy-MM-dd") ;
+		monthSum(2015,8);
+		//
 	}
 
 }

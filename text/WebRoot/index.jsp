@@ -22,5 +22,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     This is my JSP page.text的外部jsp <br>
+    <div class="left"> <img src="Qma.jsp" width="141px" height="141px"/></div>
+ <div class="left mt15 cf55e07 " style=" height:125px; width:12px; line-height:14px;"><p>扫一扫</p><p>，</p><p class="mt10">购手机</p></div>
   </body>
 </html>
