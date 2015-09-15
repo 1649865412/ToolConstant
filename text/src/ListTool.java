@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -39,6 +40,7 @@ public class ListTool
 		  return new HashSet(list);
 	}
 	
+	
 	/**
 	 * 功能:list 转 数组
 	 * <p>作者 杨荣忠 2015-9-8 上午10:38:18
@@ -69,10 +71,8 @@ public class ListTool
 		Iterator iteartor = set.iterator();
 		while(iteartor.hasNext()){
 			System.out.println(iteartor.next()+"/n");
+		 }
 		}
-	}
-	
-	
 	
 	/**
 	 * 功能:list转map
