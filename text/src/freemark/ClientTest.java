@@ -56,8 +56,8 @@ public class ClientTest {
 		root.put("pig", pig);
 		root.put("book", book);
 		
-		//FreeMarkertUtil.analysisTemplate("user.ftl", "UTF-8", root);
-		FreeMarkertUtil.analysisTemplateYang("user.ftl", "UTF-8","D://user.html" ,root);
+	//	FreeMarkertUtil.analysisTemplate("user.ftl", "UTF-8", root);
+		FreeMarkertUtil.analysisTemplateYang("user.ftl", "UTF-8","d:\\user.html" ,root);
 		
 	}
 }
