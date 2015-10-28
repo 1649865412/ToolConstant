@@ -3,7 +3,7 @@
 public class NetworkUse {
 
 	/** 判断ip是否合法*/
-	public void isIP(String str) {
+	public static void isIP(String str) {
 		String[] strs = str.split(".");
 		int[] ip = new int[strs.length];
 		for (int i = 0; i < strs.length; i++) {
@@ -31,5 +31,9 @@ public class NetworkUse {
 		}
 	}
 	
+	public static void main(String[] args)
+	{
+		isIP("219.136.57.146");
+	}
 	
 }
