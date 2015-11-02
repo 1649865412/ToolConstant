@@ -18,6 +18,16 @@ public class PrintWriter
 	 */
 	public static void main(String[] args)
 	{
+		System.out.println("hello");
+		try
+		{
+			new PrintWriter().wait();
+		}
+		catch (InterruptedException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
 	/*	PrintWriter out = resp.getWriter();
         out.print(noticeResponse.getJsonResult());

@@ -26,8 +26,10 @@ public class Exceutor
 		ExecutorService pool = Executors.newFixedThreadPool(10);
 		// 创建多个有返回值的任务
 		List<Future> list = new ArrayList<Future>();
+		
 		for (int i = 0; i < 10; i++)
-		{
+		{   
+			//进入这里面的，都是多线程，也就是说，下面的程序还会继续跑下去
 			Callable c = new MyCallable(i + " ");
 			// 执行任务并获取Future对象，获取返回结果
 			Future f = pool.submit(c);
@@ -36,7 +38,7 @@ public class Exceutor
 		// 关闭线程池
 		pool.shutdown();
 		
-		// 获取所有并发任务的运行结果
+		// 获取所有并发任务的运行结果(此处是主线程)
 		for (Future f : list)
 		{
 			// 从Future对象上获取任务的返回值，并输出到控制台
@@ -59,7 +61,7 @@ class MyCallable implements Callable<Object>
 	{
 		System.out.println("进入call方法begin:" + taskNum + "任务启动");
 		Date dateTmp1 = new Date();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Date dateTmp2 = new Date();
 		long time = dateTmp2.getTime() - dateTmp1.getTime();
 		System.out.println("进入call方法end" + taskNum + "任务终止");

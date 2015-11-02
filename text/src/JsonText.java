@@ -21,10 +21,8 @@ public class JsonText
 	 */
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub		
 	}
-	
 
 
     public static final JSONArray ResultSetToJsonArray(ResultSet rs) {

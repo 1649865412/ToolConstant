@@ -17,9 +17,12 @@ public class EmailDemo {
 			mail.send();
 		}
 		
+		
 		public static void main(String[] args) {
 			demo();
 		}
+		
+		
 	}
 
 

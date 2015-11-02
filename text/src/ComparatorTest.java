@@ -34,7 +34,6 @@ public class ComparatorTest<T> implements Comparator<T>
 		{
 			System.out.println(list.get(i));
 		}
-		
 	}
 	
 	public int compare(T o1, T o2)
