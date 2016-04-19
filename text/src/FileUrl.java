@@ -20,6 +20,7 @@ public class FileUrl
 		   System.out.println(FileUrl.class.getResource("/")); //Class文件所在路径  
 		   System.out.println(new File("/").getAbsolutePath());        
 		   System.out.println(System.getProperty("user.dir"));    //获取项目路径！
+		   System.out.println("杨荣忠");
 		 //String encoderContent = url.delete(url.length() - request.getRequestURI().length(), url.length()).append("/").toString()+"product/"+product.getProductId()+".html";
 		  }
 	
